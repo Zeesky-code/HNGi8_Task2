@@ -1,1 +1,1 @@
-print('Zainab Damilola Lawal')
+print('Zainab Lawal')
