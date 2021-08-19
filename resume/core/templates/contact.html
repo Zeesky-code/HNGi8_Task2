@@ -1,3 +1,6 @@
+{% extends 'base.html' %}
+{% load static %}
+
 {% block content %}
 <!-- Section: Contact -->
 <section id="contact" class="text-center">
@@ -7,7 +10,7 @@
         <form method="POST">
           {% csrf_token %}
           <div class='form-group'>
-            {{form}}
+            {{form.as_p}}
             </div>
           <!-- Submit button -->
           <input type="submit" class="btn btn-primary btn-block mb-4" value = "Submit">
