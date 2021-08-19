@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Marc Jones</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <style>
+        #message{
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+        }
+        # text{
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+                    }
+    </style>
+  </head>
+  <body>
+        <div id="message">
+            <h1 id="text">Thank you for your inquiry</h1>
+            <p id="text">Your contact information and message was successfully submitted.</p>
+            <a href="{% url 'core:homeView' %}">
+                <button>Home</button>
+            </a>
+        </div>
+    </body>
+</html>
